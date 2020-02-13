@@ -259,12 +259,12 @@ body {
         width: 26.3rem;
 
         @include respond(desktop-md) {
-          width: 45%;
+          //width: 45%;
           //width: 23rem;
         }
 
         @include respond(desktop-sm) {
-          width: 50%;
+          //width: 50%;
           //width: 23rem;
         }
 
@@ -305,7 +305,7 @@ body {
         margin-left: 1.7rem;
 
         @include respond(desktop-md) {
-          width: 35%;
+          //width: 35%;
           //width: 18rem;
         }
 

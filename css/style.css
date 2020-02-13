@@ -155,12 +155,6 @@ body {
         margin-bottom: 1rem;
         position: relative;
         width: 26.3rem; }
-        @media (max-width: 991px) {
-          .results-body .inputs .search {
-            width: 45%; } }
-        @media (max-width: 767px) {
-          .results-body .inputs .search {
-            width: 50%; } }
         .results-body .inputs .search input {
           font-family: "Nunito", sans-serif;
           width: 100%;
@@ -185,9 +179,6 @@ body {
       .results-body .inputs .select {
         width: 20.95rem;
         margin-left: 1.7rem; }
-        @media (max-width: 991px) {
-          .results-body .inputs .select {
-            width: 35%; } }
         .results-body .inputs .select select {
           font-family: "Nunito", sans-serif;
           padding-left: 1.7rem;

@@ -135,7 +135,8 @@ body {
     border: solid 2px #eaebee;
     border-radius: 4px;
     background-color: #fff;
-    margin-bottom: 2.8rem; }
+    margin-bottom: 2.8rem;
+    min-width: 60rem; }
     .results-body .h3 {
       margin-top: 2.7rem;
       margin-left: 2.5rem;

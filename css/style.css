@@ -101,8 +101,7 @@ body {
     width: 100%;
     height: 17rem;
     padding-top: 4.1rem;
-    background-color: #f8f9fb;
-    z-index: 500; }
+    background-color: #f8f9fb; }
     .results-header-logout {
       height: 2rem;
       margin: 0;
@@ -171,6 +170,7 @@ body {
             font-weight: 500;
             color: rgba(0, 0, 0, 0.75); }
         .results-body .inputs .search i {
+          font-size: 2.5rem;
           position: absolute;
           top: 50%;
           left: 2.5rem;
@@ -269,6 +269,7 @@ body {
     flex: 1;
     max-height: calc(100vh - 14.4rem - 2.8rem - 6.9rem - 12.2rem - 6.9rem - 3rem);
     overflow-y: auto;
+    overflow-x: hidden;
     scrollbar-width: none;
     /* Firefox */
     -ms-overflow-style: none;
@@ -280,23 +281,23 @@ body {
   .panel-body table.flex-table tr {
     width: 100%;
     display: flex; }
-  .panel-body table.flex-table tr td, .panel-body table.flex-table tr th {
+  .panel-body table.flex-table tr td:not(.spacer-left), .panel-body table.flex-table tr th:not(.spacer-left) {
     white-space: nowrap;
     display: flex;
     flex: 1.1;
     align-items: center;
     justify-content: start; }
-    .panel-body table.flex-table tr td.team-index, .panel-body table.flex-table tr th.team-index {
+    .panel-body table.flex-table tr td:not(.spacer-left).team-index, .panel-body table.flex-table tr th:not(.spacer-left).team-index {
       flex: .75; }
       @media (max-width: 991px) {
-        .panel-body table.flex-table tr td.team-index, .panel-body table.flex-table tr th.team-index {
+        .panel-body table.flex-table tr td:not(.spacer-left).team-index, .panel-body table.flex-table tr th:not(.spacer-left).team-index {
           flex: 1; } }
       @media (max-width: 767px) {
-        .panel-body table.flex-table tr td.team-index, .panel-body table.flex-table tr th.team-index {
+        .panel-body table.flex-table tr td:not(.spacer-left).team-index, .panel-body table.flex-table tr th:not(.spacer-left).team-index {
           flex: .5; } }
-    .panel-body table.flex-table tr td.team-lead-rating, .panel-body table.flex-table tr th.team-lead-rating {
+    .panel-body table.flex-table tr td:not(.spacer-left).team-lead-rating, .panel-body table.flex-table tr th:not(.spacer-left).team-lead-rating {
       flex: .75; }
-    .panel-body table.flex-table tr td.team-view, .panel-body table.flex-table tr th.team-view {
+    .panel-body table.flex-table tr td:not(.spacer-left).team-view, .panel-body table.flex-table tr th:not(.spacer-left).team-view {
       flex: .5; }
   .panel-body table.flex-table tr th {
     border: none !important;
@@ -304,7 +305,6 @@ body {
     font-size: 1.4rem;
     color: #5e636b; }
   .panel-body table .spacer-left {
-    flex: 0.05 !important;
     width: 25px !important; }
   .panel-body table .spacer-right {
     flex: 0.02 !important; }

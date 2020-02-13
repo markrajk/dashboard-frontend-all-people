@@ -176,7 +176,6 @@ body {
   padding: 0 4.6rem 0 3.4rem;
 
   &-header {
-    //position: fixed;
     position: relative;
     top: 0;
     left: 0;
@@ -184,7 +183,6 @@ body {
     height: 17rem;
     padding-top: 4.1rem;
     background-color: #f8f9fb;
-    z-index: 500;
 
     &-logout {
       height: 2rem;
@@ -253,6 +251,7 @@ body {
 
     & .inputs {
       padding: 0 2.5rem;
+
       & .search {
         margin-bottom: 1rem;
         position: relative;
@@ -292,6 +291,7 @@ body {
         }
 
         & i {
+          font-size: 2.5rem;
           position: absolute;
           top: 50%;
           left: 2.5rem;
@@ -339,8 +339,6 @@ body {
     // }
 
     & .table {
-      //position: relative;
-      //margin-top: 4.7rem;
       margin-bottom: 0;
       height: 100%;
       max-height: 100%;
@@ -448,6 +446,7 @@ body {
       flex: 1;
       max-height: calc(100vh - 14.4rem - 2.8rem - 6.9rem - 12.2rem - 6.9rem - 3rem);
       overflow-y: auto;
+      overflow-x: hidden;
       scrollbar-width: none; /* Firefox */
       -ms-overflow-style: none; /* Internet Explorer 10+ */
 
@@ -461,8 +460,8 @@ body {
       width: 100%;
       display: flex;
     }
-    &.flex-table tr td,
-    &.flex-table tr th {
+    &.flex-table tr td:not(.spacer-left),
+    &.flex-table tr th:not(.spacer-left) {
       white-space: nowrap;
       display: flex;
       flex: 1.1;
@@ -509,7 +508,7 @@ body {
 
     & .spacer-left {
       // display: block;
-      flex: 0.05 !important;
+      //flex: 0.05 !important;
       width: 25px !important;
     }
   

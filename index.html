@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahsboard | All people</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Nunito:300,400|Open+Sans:400,600,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- MAIN WRAPPER -->
+    <main class="main d-flex">
+
+        <!-- SIDEBAR SECTION-->
+        <div class="sidebar d-flex flex-column bg-white">
+            <div class="sidebar-info d-flex align-items-center">
+                <img class="sidebar-info-img" src="img/profile-pic.png" alt="profile picture">
+                <div class="d-flex flex-column">
+                    <p class="sidebar-info-name m-0">Andrew<span class="align-middle"></span></p>
+                    <p class="sidebar-info-title m-0">Boss</p>
+                </div>
+            </div>
+
+            <div class="sidebar-group">
+                <h3>GIVE FEEDBACK</h3>
+                <select name="sidebar-select" id="sidebar-select">
+                    <option value="one">To you people</option>
+                </select>
+            </div>
+
+            <div class="sidebar-body">
+                <div class="sidebar-group">
+                    <h3>TEAMS</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Results </a></li>
+                        <li><a href="#">Export results </a></li>
+                        <li><a href="#">Manage teams </a></li>
+                        <li><a href="#">Create a new team </a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-group">
+                    <h3>PEOPLE</h3>
+                    <ul class="list-unstyled">
+                        <li class="active"><a href="#">Results </a></li>
+                        <li><a href="#">Export results </a></li>
+                        <li><a href="#">Manage people</a></li>
+                        <li><a href="#">Invite new people </a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-group">
+                    <h3>ME</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Results </a></li>
+                        <li><a href="#">My account </a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-group">
+                    <h3>ADMIN</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">User/team register </a></li>
+                        <li><a href="#">Company Profile </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESULTS SECTION -->
+        <div class="results">
+            <div class="results-header">
+                <div class="results-header-logout d-flex justify-content-between">
+                    <p class="mb-0">People</p>
+                    <p class="text-right align-middle"><a href="#">Logout</a> <i
+                            class="material-icons align-middle">exit_to_app</i></p>
+                </div>
+                <h2 class="mt-1 align-middle">Results</h2>
+                <p class="choose">My key people <span class="mx-1">|</span> <a href="#">All people</a></span></p>
+                <!-- <p class="choose"><span>My key people </span><span class="px-1">|</span> All people</p> -->
+                <!-- <div class="results-header-search">
+                    <div class="input-group h-100">
+                        <i class="material-icons">search</i>
+                        <input class="m-auto" type="text" placeholder="Search...">
+                    </div>
+                </div> -->
+            </div>
+            <div class="results-body">
+
+
+                <div class="h3 d-flex justify-content-between">
+                    <h3>All teams of our company</h3>
+                    <div>
+                        <a href="#"><i class="material-icons">filter_list</i></a>
+                        <a href="#"><i class="material-icons ml-2">more_vert</i></a>
+                    </div>
+                </div>
+
+
+                <div class="inputs d-flex flex-wrap mb-3">
+                    <div class="search">
+                        <i class="material-icons">search</i>
+                        <input class="m-auto" type="text" placeholder="Search...">
+                    </div>
+                    <div class="select">
+                        <select name="category" id="category">
+                            <option value="1" selected>All categories</option>
+                            <option value="2">All categories</option>
+                            <option value="3">All categories</option>
+                        </select>
+                    </div>
+
+                    <div class="select">
+                        <select name="teams" id="teams">
+                            <option value="1" selected>All categories</option>
+                            <option value="2">All categories</option>
+                            <option value="3">All categories</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- TABLE SECTION -->
+                <div class="row table-row">
+                    <div class="col-sm-12">
+                        <div class="panel-body">
+                            <table class="table flex-table">
+                                <thead>
+                                    <tr>
+                                        <th class="border-0 border-bottom spacer-left"></th>
+                                        <th class="border-0 border-bottom person-name">Name</th>
+                                        <th class="border-0 border-bottom team-lead-name d-none d-xl-flex">Team</th>
+                                        <th class="border-0 border-bottom"><a href="#">Job title</th>
+                                        <th class="border-0 border-bottom">His/her boss</th>
+                                        <th class="border-0 border-bottom">Latest feedback</th>
+                                        <th class="border-0 border-bottom"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-03.png" alt="#">
+                                            <p class="m-0">Gilbert Mack</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Senior Python Developer</td>
+                                        <td class="team-size d-none d-lg-flex">Senior Python Developer</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-green">Good</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-07.png" alt="#">
+                                            <p class="m-0">Jesse Gregory</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Junior Javascript Developer</td>
+                                        <td class="team-size d-none d-lg-flex">Junior Javascript Developer</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-orange">Ok</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-07.png" alt="#">
+                                            <p class="m-0">Kate Lindsley</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Software Architect</td>
+                                        <td class="team-size d-none d-lg-flex">Software Architect</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-red">Bad</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-03.png" alt="#">
+                                            <p class="m-0">Gilbert Mack</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Senior Python Developer</td>
+                                        <td class="team-size d-none d-lg-flex">Senior Python Developer</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-green">Good</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-07.png" alt="#">
+                                            <p class="m-0">Jesse Gregory</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Junior Javascript Developer</td>
+                                        <td class="team-size d-none d-lg-flex">Junior Javascript Developer</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-orange">Ok</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-07.png" alt="#">
+                                            <p class="m-0">Kate Lindsley</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Software Architect</td>
+                                        <td class="team-size d-none d-lg-flex">Software Architect</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-red">Bad</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-03.png" alt="#">
+                                            <p class="m-0">Gilbert Mack</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Senior Python Developer</td>
+                                        <td class="team-size d-none d-lg-flex">Senior Python Developer</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-green">Good</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-07.png" alt="#">
+                                            <p class="m-0">Jesse Gregory</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Junior Javascript Developer</td>
+                                        <td class="team-size d-none d-lg-flex">Junior Javascript Developer</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-orange">Ok</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-07.png" alt="#">
+                                            <p class="m-0">Kate Lindsley</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Software Architect</td>
+                                        <td class="team-size d-none d-lg-flex">Software Architect</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-red">Bad</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-03.png" alt="#">
+                                            <p class="m-0">Gilbert Mack</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Senior Python Developer</td>
+                                        <td class="team-size d-none d-lg-flex">Senior Python Developer</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-green">Good</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-07.png" alt="#">
+                                            <p class="m-0">Jesse Gregory</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Junior Javascript Developer</td>
+                                        <td class="team-size d-none d-lg-flex">Junior Javascript Developer</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-orange">Ok</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-07.png" alt="#">
+                                            <p class="m-0">Kate Lindsley</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Software Architect</td>
+                                        <td class="team-size d-none d-lg-flex">Software Architect</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-red">Bad</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-03.png" alt="#">
+                                            <p class="m-0">Gilbert Mack</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Senior Python Developer</td>
+                                        <td class="team-size d-none d-lg-flex">Senior Python Developer</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-green">Good</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-07.png" alt="#">
+                                            <p class="m-0">Jesse Gregory</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Junior Javascript Developer</td>
+                                        <td class="team-size d-none d-lg-flex">Junior Javascript Developer</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-orange">Ok</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-07.png" alt="#">
+                                            <p class="m-0">Kate Lindsley</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Software Architect</td>
+                                        <td class="team-size d-none d-lg-flex">Software Architect</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-red">Bad</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-03.png" alt="#">
+                                            <p class="m-0">Gilbert Mack</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Senior Python Developer</td>
+                                        <td class="team-size d-none d-lg-flex">Senior Python Developer</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-green">Good</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-07.png" alt="#">
+                                            <p class="m-0">Jesse Gregory</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Junior Javascript Developer</td>
+                                        <td class="team-size d-none d-lg-flex">Junior Javascript Developer</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-orange">Ok</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-07.png" alt="#">
+                                            <p class="m-0">Kate Lindsley</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Software Architect</td>
+                                        <td class="team-size d-none d-lg-flex">Software Architect</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-red">Bad</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-03.png" alt="#">
+                                            <p class="m-0">Gilbert Mack</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Senior Python Developer</td>
+                                        <td class="team-size d-none d-lg-flex">Senior Python Developer</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-green">Good</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-07.png" alt="#">
+                                            <p class="m-0">Jesse Gregory</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Junior Javascript Developer</td>
+                                        <td class="team-size d-none d-lg-flex">Junior Javascript Developer</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-orange">Ok</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="spacer-left"></td>
+                                        <td class="team-name">
+                                            <img src="./img/p-07.png" alt="#">
+                                            <p class="m-0">Kate Lindsley</p>
+                                        </td>
+                                        <td class="team-lead-name d-none d-xl-flex">Software Architect</td>
+                                        <td class="team-size d-none d-lg-flex">Software Architect</td>
+                                        <td class="team-index">Steve Jobs</td>
+                                        <td class="team-lead-rating">
+                                            <button class="btn-table btn-table-red">Bad</button>
+                                        </td>
+                                        <td class="team-view">
+                                            <a href="#">Open profile</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="table-footer"></div> -->
+                <div class="table-footer bg-white d-flex justify-content-end align-items-center">
+                    <p class="align-middle">Rows per page</p>
+                    <select class="ml-5 mr-5">
+                        <option selected>10</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <p class="align-middle mx-4">1-8 of 120</p>
+                    <div>
+                        <a href="#"><i
+                                class="material-icons text-left align-middle disabled">keyboard_arrow_left</i></a>
+                        <a href="#"><i class="material-icons text-right align-middle ml-2">keyboard_arrow_right</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+    //     const isOverflown = (clientHeight, scrollHeight) => {
+    //         return scrollHeight > clientHeight;
+    //     }
+
+
+    //    const onResize = () => {
+    //         let bool = isOverflown(document.querySelector('.table').clientHeight, document.querySelector('.table').scrollHeight);
+    //         if(bool) {
+    //             document.querySelector('thead').style.width = 'calc(100% - 1.7rem)';
+    //         } else {
+    //             document.querySelector('thead').style.width = 'calc(100%)'
+    //         }
+    //    }
+    //    onResize()
+
+    //     window.addEventListener("resize", onResize);
+    </script>
+</body>
+
+</html>

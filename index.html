@@ -105,11 +105,11 @@
 
 
                 <div class="inputs d-flex mb-3">
-                    <div class="search">
+                    <div class="search ">
                         <i class="material-icons">search</i>
                         <input class="m-auto" type="text" placeholder="Search...">
                     </div>
-                    <div class="select">
+                    <div class="select d-none d-sm-block">
                         <select name="category" id="category">
                             <option value="1" selected>All categories</option>
                             <option value="2">All categories</option>
@@ -117,7 +117,7 @@
                         </select>
                     </div>
 
-                    <div class="select">
+                    <div class="select d-none d-md-block">
                         <select name="teams" id="teams">
                             <option value="1" selected>All categories</option>
                             <option value="2">All categories</option>
@@ -506,8 +506,8 @@
 
                 <!-- <div class="table-footer"></div> -->
                 <div class="table-footer bg-white d-flex justify-content-end align-items-center">
-                    <p class="align-middle">Rows per page</p>
-                    <select class="ml-5 mr-5">
+                    <p class="align-middle d-none d-md-block">Rows per page</p>
+                    <select class="ml-5 mr-5 d-none d-md-block">
                         <option selected>10</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>

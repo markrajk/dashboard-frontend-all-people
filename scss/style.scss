@@ -230,7 +230,7 @@ body {
     border-radius: 4px;
     background-color: #fff;
     margin-bottom: 2.8rem;
-    min-width: 60rem;
+    //min-width: 60rem;
 
     & .h3 {
       margin-top: 2.7rem;
@@ -259,12 +259,18 @@ body {
         width: 26.3rem;
 
         @include respond(desktop-md) {
-          width: 23rem;
+          width: 45%;
+          //width: 23rem;
         }
 
         @include respond(desktop-sm) {
-          width: 30%;
+          width: 50%;
+          //width: 23rem;
         }
+
+        // @include respond(desktop-sm) {
+        //   width: 30%;
+        // }
 
         & input {
           font-family: "Nunito", sans-serif;
@@ -299,7 +305,8 @@ body {
         margin-left: 1.7rem;
 
         @include respond(desktop-md) {
-          width: 30%;
+          width: 35%;
+          //width: 18rem;
         }
 
         & select {
@@ -307,7 +314,7 @@ body {
           padding-left: 1.7rem;
           height: 3.5rem;
           width: 100%;
-          font-size: 14px;
+          font-size: 1.4rem;
           font-weight: 500;
           line-height: 1.14;
           color: rgba(0, 0, 0, 0.75);

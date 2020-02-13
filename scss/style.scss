@@ -258,15 +258,15 @@ body {
         position: relative;
         width: 26.3rem;
 
-        @include respond(desktop-md) {
-          //width: 45%;
-          //width: 23rem;
-        }
+        // @include respond(desktop-md) {
+        //   //width: 45%;
+        //   //width: 23rem;
+        // }
 
-        @include respond(desktop-sm) {
-          //width: 50%;
-          //width: 23rem;
-        }
+        // @include respond(desktop-sm) {
+        //   //width: 50%;
+        //   //width: 23rem;
+        // }
 
         // @include respond(desktop-sm) {
         //   width: 30%;
@@ -304,10 +304,10 @@ body {
         width: 20.95rem;
         margin-left: 1.7rem;
 
-        @include respond(desktop-md) {
-          //width: 35%;
-          //width: 18rem;
-        }
+        // @include respond(desktop-md) {
+        //   //width: 35%;
+        //   //width: 18rem;
+        // }
 
         & select {
           font-family: "Nunito", sans-serif;
@@ -478,6 +478,10 @@ body {
          @include respond(desktop-md) {
           flex: 1;
         }
+
+        @include respond(desktop-sm) {
+          flex: .5;
+        }
       }
 
       &.team-lead-rating {
@@ -490,8 +494,8 @@ body {
       &.team-view {
         flex: .5;
 
-        // @include respond(desktop-lg) {
-        //   flex: .6;
+        // @include respond(desktop-sm) {
+        //   display: none;
         // }
       }
     }

@@ -302,9 +302,6 @@ body {
           flex: 1; } }
     .panel-body table.flex-table tr td.team-lead-rating, .panel-body table.flex-table tr th.team-lead-rating {
       flex: .75; }
-      @media (max-width: 991px) {
-        .panel-body table.flex-table tr td.team-lead-rating, .panel-body table.flex-table tr th.team-lead-rating {
-          flex: 1; } }
     .panel-body table.flex-table tr td.team-view, .panel-body table.flex-table tr th.team-view {
       flex: .5; }
   .panel-body table.flex-table tr th {

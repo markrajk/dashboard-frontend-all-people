@@ -474,9 +474,9 @@ body {
 
       &.team-lead-rating {
         flex: .75;
-         @include respond(desktop-md) {
-          flex: 1;
-        }
+        //  @include respond(desktop-md) {
+        //   flex: 1;
+        // }
       }
 
       &.team-view {

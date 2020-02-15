@@ -215,6 +215,10 @@ body {
       margin: 2.2rem 0;
       font-size: 1.6rem;
       color: #878590;
+      & .divider {
+        color: #1a173b;
+        font-weight: 700;
+      }
       & a {
         font-weight: 700;
         color: #1a173b;

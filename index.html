@@ -95,12 +95,12 @@
             <div class="results-body">
 
 
-                <div class="h3 d-flex justify-content-between">
+                <div class="h3 d-flex">
                     <h3>All people</h3>
-                    <div>
+                    <!-- <div>
                         <a href="#"><i class="d-none d-sm-inline-block material-icons">filter_list</i></a>
                         <a href="#"><i class="d-none d-sm-inline-block material-icons ml-2">more_vert</i></a>
-                    </div>
+                    </div> -->
                 </div>
 
 
@@ -116,14 +116,14 @@
                             <option value="3">All categories</option>
                         </select>
                     </div>
-
+<!-- 
                     <div class="select d-none d-lg-block">
                         <select name="teams" id="teams">
                             <option value="1" selected>All categories</option>
                             <option value="2">All categories</option>
                             <option value="3">All categories</option>
                         </select>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- TABLE SECTION -->
                 <div class="row table-row">
@@ -506,14 +506,15 @@
 
                 <!-- <div class="table-footer"></div> -->
                 <div class="table-footer bg-white d-flex justify-content-end align-items-center">
-                    <p class="align-middle d-none d-md-block">Rows per page</p>
-                    <select class="ml-5 mr-5 d-none d-md-block">
+                    <p class="align-middle d-none d-md-block mr-4">Rows per page <span class="ml-2">20</span></p>
+
+                    <p class="align-middle mx-5">page <span class="mx-1">1</span> of <span class="mx-1">1</span></p>
+                    <!-- <select class="ml-5 mr-5 d-none d-md-block">
                         <option selected>10</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
-                    </select>
-                    <p class="align-middle mx-4">1-8 of 120</p>
+                    </select> -->
                     <div>
                         <a href="#"><i
                                 class="material-icons text-left align-middle disabled">keyboard_arrow_left</i></a>
@@ -526,25 +527,6 @@
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/main.js"></script>
-
-    <script>
-    //     const isOverflown = (clientHeight, scrollHeight) => {
-    //         return scrollHeight > clientHeight;
-    //     }
-
-
-    //    const onResize = () => {
-    //         let bool = isOverflown(document.querySelector('.table').clientHeight, document.querySelector('.table').scrollHeight);
-    //         if(bool) {
-    //             document.querySelector('thead').style.width = 'calc(100% - 1.7rem)';
-    //         } else {
-    //             document.querySelector('thead').style.width = 'calc(100%)'
-    //         }
-    //    }
-    //    onResize()
-
-    //     window.addEventListener("resize", onResize);
-    </script>
 </body>
 
 </html>
